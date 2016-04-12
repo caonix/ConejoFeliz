@@ -4,15 +4,15 @@ var HelloWorldLayer = cc.Layer.extend({
     sprConejo:null,
     ctor:function () {
         this._super();
-        //Obteniendo el tamaño de la pantalla
+        //Consiguiendo tamano pantalla
         var size = cc.winSize;
 
-        //posicionando la imagen de fondo
+        //Posicionando el background
         this.sprFondo = new cc.Sprite(res.fondo_png);
         this.sprFondo.setPosition(size.width / 2,size.height / 2);
         this.addChild(this.sprFondo, 0);
         
-        //posicionando la imagen de fondo
+        //Posicionando el background
         this.sprConejo = new cc.Sprite(res.conejo_png);
         this.sprConejo.setPosition(size.width / 2,size.height * 0.15);
         this.addChild(this.sprConejo, 1);
